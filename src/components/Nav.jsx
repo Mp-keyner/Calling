@@ -21,8 +21,12 @@ const Nav = () => {
                 alignItems: 'center',
                 gap: '1pc'
             }}>
+                <Typography sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px'
+                }} > <PaidOutlinedIcon /> APUESTAS</Typography>
                 <Typography >SALIR</Typography>
-                <Typography>APUESTAS</Typography>
                 <Box component="div" sx={{
                     display: 'flex',
                     alignItems: 'center',
@@ -34,7 +38,7 @@ const Nav = () => {
                         border: '2px solid white'
                     }} />
                     <Typography>MI PERFIL
-                        <PaidOutlinedIcon />
+
                     </Typography>
                 </Box>
             </Box>
