@@ -1,11 +1,11 @@
 import { ThemeProvider } from "@emotion/react"
-import Nav from "./components/Nav"
-import { createTheme } from "@mui/material"
+import { Container, createTheme } from "@mui/material"
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import Nav from "./components/Nav/Nav";
 
 
 const App = () => {
@@ -19,15 +19,25 @@ const App = () => {
       secondary: {
         main: '#ffffff',
       },
+      text: {
+        main: '#000'
+      },
       background: {
         default: '#de6565',
         paper: '#169ad7',
+        secondary: '#fff'
       },
     },
   })
   return (
     <ThemeProvider theme={theme}>
       <Nav />
+
+      <Container sx={{
+        height: '100vh'
+      }}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem corrupti beatae, delectus qui dolorem quae expedita? Placeat eius laboriosam autem quasi molestiae eveniet dolore, repellat blanditiis reprehenderit ipsa facilis.</p>
+      </Container>
     </ThemeProvider>
   )
 }
