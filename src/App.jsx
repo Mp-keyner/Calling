@@ -19,6 +19,10 @@ const App = () => {
       secondary: {
         main: '#ffffff',
       },
+      background: {
+        default: '#de6565',
+        paper: '#169ad7',
+      },
     },
   })
   return (
