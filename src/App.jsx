@@ -6,6 +6,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Nav from "./components/Nav/Nav";
+import NavProfile from "./components/NavProfile";
 
 
 const App = () => {
@@ -22,6 +23,9 @@ const App = () => {
       text: {
         main: '#000'
       },
+      btn:{
+        main: '#f58220'
+      },
       background: {
         default: '#de6565',
         paper: '#169ad7',
@@ -30,15 +34,19 @@ const App = () => {
     },
   })
   return (
-    <ThemeProvider theme={theme}>
+    <>
+      <ThemeProvider theme={theme}>
       <Nav />
-
+      <NavProfile/>
       <Container sx={{
-        height: '100vh'
+        height: '100vh',
+        display: 'fle',
+        alignItems: 'center'
       }}>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem corrupti beatae, delectus qui dolorem quae expedita? Placeat eius laboriosam autem quasi molestiae eveniet dolore, repellat blanditiis reprehenderit ipsa facilis.</p>
       </Container>
     </ThemeProvider>
+    </>
   )
 }
 
